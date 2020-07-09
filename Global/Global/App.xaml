@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Global.App">
-    <Application.Resources>
+             x:Class="Global.App"
+             xmlns:infra="clr-namespace:Global.Infrastructure;assembly=Global">
 
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Colores de la app-->
+            <Color x:Key="MainColor">#3A558C</Color>
+            <Color x:Key="FontColor">#F29A2E</Color>
+            <Color x:Key="MenuColor">#137497</Color>
+            <Color x:Key="MenuFontColor">#F29A2F</Color>
+            <Color x:Key="BackgroundColor">#3A558C</Color>
+            <Color x:Key="AccentColor">#F24444</Color>
+            <!--Locator-->
+            <infra:InstanceLocator x:Key="Locator"></infra:InstanceLocator>
+            
+        </ResourceDictionary>
     </Application.Resources>
+
+
 </Application>

@@ -1,19 +1,28 @@
-﻿using System;
+﻿using Global.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Global
 {
-    public partial class App : Application
-    {
+	
+	public partial class App : Application
+	{
+        #region Properties
+        public static NavigationPage Navigator { get; internal set; }
+        public static MasterPage Master { get; internal set; }
+        #endregion
+
+        #region Constructor
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new MasterPage();
         }
+        #endregion
 
+        #region Methods
         protected override void OnStart()
         {
             // Handle when your app starts
@@ -27,6 +36,7 @@ namespace Global
         protected override void OnResume()
         {
             // Handle when your app resumes
-        }
+        } 
+        #endregion
     }
 }
