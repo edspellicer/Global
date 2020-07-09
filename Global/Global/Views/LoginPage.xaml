@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Global.Views.LoginPage"
+              Title="LoginPage"
+             BackgroundColor="{StaticResource MainColor}"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <StackLayout BindingContext="{Binding NewLogin}" Padding="10" Spacing="20">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label
+            Text="Global App"
+            TextColor="{StaticResource BackgroundColor}"
+            FontSize="24"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            </Label>
+            <Image
+            Source="ic_launcher.png"
+            WidthRequest="50"
+            HeightRequest="50"          
+           >
+            </Image>
+        </StackLayout>
+        <BoxView
+            HeightRequest="3"
+            Color="{StaticResource BackgroundColor}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+        </BoxView>
+        <Entry
+            Text="{Binding CodPer, Mode=TwoWay}"
+            Placeholder="Usuario"
+            TextColor="{StaticResource FontColor}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">            
+        </Entry>
+        <Button
+            Command="{Binding LoginCommand}"
+            Text="Ingresar"
+            TextColor="{StaticResource AccentColor}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            
+        </Button>
+        
+    </StackLayout>
+</ContentPage>
