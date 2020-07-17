@@ -4,10 +4,23 @@
              x:Class="Global.Views.UserPage"
              Title="Global App"
              BackgroundColor="{StaticResource BackgroundColor}">
-    <Label
-        Text="UserPage"
-        TextColor="{StaticResource FontColor}"
-        VerticalOptions="Center"
-        HorizontalOptions="Center"/>
+    <StackLayout>
+        <ListView x:Name="MyListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label 
+                                Text="{Binding CodPer}"
+                                TextColor="Gray"/>
+                            <Label 
+                                Text="{Binding DesPer}"
+                                TextColor="{StaticResource AccentColor}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 
 </ContentPage>

@@ -14,6 +14,7 @@ namespace Global.ViewModels
         private NavigationService navigationService;
 
         private DialogService dialogService;
+        private ApiService apiService;
         #endregion
 
         #region Properties
@@ -26,6 +27,7 @@ namespace Global.ViewModels
         {
             navigationService = new NavigationService();
             dialogService = new DialogService();
+            apiService = new ApiService();
         } 
         #endregion
 
@@ -38,6 +40,13 @@ namespace Global.ViewModels
                 await dialogService.ShowMessage("Error", "Debes Ingresar Código de Usuario");
                 return;
             }
+            var response = await apiService.Login(CodPer);
+            if (!response.isSuccess)
+            {
+                await dialogService.ShowMessage("Error", response.Message);
+                return;
+            }
+
             navigationService.SetMainPage();
         } 
         #endregion

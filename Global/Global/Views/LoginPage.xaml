@@ -31,8 +31,10 @@
         </BoxView>
         <Entry
             Text="{Binding CodPer, Mode=TwoWay}"
-            Placeholder="Usuario"
+            Placeholder="Código Usuario"
+            
             TextColor="{StaticResource FontColor}"
+            IsPassword="True"
             HorizontalOptions="Center"
             VerticalOptions="Center">            
         </Entry>
