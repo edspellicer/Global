@@ -33,7 +33,7 @@ namespace Global.ViewModels
 
             Menu.Add(new MenuItemViewModel
             {
-                icon = "picking.png",
+                icon = "box.png",
                 Title = "Picking",
                 PageName = "PickingPage"
             });

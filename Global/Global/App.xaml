@@ -8,11 +8,19 @@
         <ResourceDictionary>
             <!-- Colores de la app-->
             <Color x:Key="MainColor">#3A558C</Color>
+            <!-- COLOR DE FONDO DE PAGE-->
             <Color x:Key="FontColor">#F29A2E</Color>
+            <!-- Color de la fuente-->
             <Color x:Key="MenuColor">#137497</Color>
+            <!-- Color de Menú-->
             <Color x:Key="MenuFontColor">#F29A2F</Color>
+            <!-- Color de la fuente de Menu-->
             <Color x:Key="BackgroundColor">#3A558C</Color>
+            <!-- Color de fondo de pagina-->
             <Color x:Key="AccentColor">#F24444</Color>
+            <!-- Color acentuacion o resalte-->
+           
+            
             <!--Locator-->
             <infra:InstanceLocator x:Key="Locator"></infra:InstanceLocator>
             

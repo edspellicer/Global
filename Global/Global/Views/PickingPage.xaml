@@ -5,9 +5,25 @@
              Title="Picking"
              BackgroundColor="{StaticResource BackgroundColor}"
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Entry Placeholder="Cantidad de Cajas"/>
+                <Entry Placeholder="Ubicación"/>
+                <Entry Placeholder="Código de Barras"/>
+                <Entry Placeholder="Lote"/>
+                <Entry Placeholder="Unidades Solicitadas"/>
+                <Entry Placeholder="Unidades Disponibles"/>
+                <Button
+                    Text="Registrar"
+                    BackgroundColor="DarkOliveGreen"
+                    TextColor="Accent">
+                    
+                </Button>
 
-    <Label Text="Picking Page"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
     
 </ContentPage>

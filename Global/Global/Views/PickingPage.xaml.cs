@@ -14,7 +14,7 @@ namespace Global.Views
 	{
 		public PickingPage ()
 		{
-			InitializeComponent ();
+			//InitializeComponent ();
 		}
 	}
 }
