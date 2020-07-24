@@ -44,7 +44,7 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
             <Image 
-              Source="{Binding Icon}"
+              Source="{Binding icon}"
               WidthRequest="50"
               HeightRequest="50"/>
             <Label 

@@ -11,8 +11,8 @@
         <NavigationPage x:Name="Navigator"
                     BarBackgroundColor="{StaticResource MainColor}">
             <x:Arguments>
-                <Views:UserPage>
-                </Views:UserPage>
+                <Views:MainPage>
+                </Views:MainPage>
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

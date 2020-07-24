@@ -12,7 +12,6 @@ namespace Global.ViewModels
         #region Attributes
 
         private NavigationService navigationService;
-
         private DialogService dialogService;
         private ApiService apiService;
         #endregion
@@ -33,6 +32,9 @@ namespace Global.ViewModels
 
         #region Commands
         public ICommand LoginCommand { get { return new RelayCommand(Login); } }
+
+
+        // aca le podemos descomementar para utilizar async antes del void
         private async void Login()
         {
             if (string.IsNullOrEmpty(CodPer))
@@ -40,12 +42,12 @@ namespace Global.ViewModels
                 await dialogService.ShowMessage("Error", "Debes Ingresar Código de Usuario");
                 return;
             }
-            var response = await apiService.Login(CodPer);
-            if (!response.isSuccess)
-            {
-                await dialogService.ShowMessage("Error", response.Message);
-                return;
-            }
+            //var response = await apiService.Login(CodPer);
+            //if (!response.isSuccess)
+            //{
+            //    await dialogService.ShowMessage("Error", response.Message);
+            //    return;
+            //}
 
             navigationService.SetMainPage();
         } 
