@@ -1,9 +1,9 @@
-﻿using GalaSoft.MvvmLight.Command;
+﻿using System.Windows.Input;
+using GalaSoft.MvvmLight.Command;
 using Global.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Windows.Input;
 
 namespace Global.ViewModels
 {

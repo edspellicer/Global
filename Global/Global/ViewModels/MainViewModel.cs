@@ -52,7 +52,7 @@ namespace Global.ViewModels
             });
             Menu.Add(new MenuItemViewModel
             {
-                icon = "exit.png",
+                icon = "salir.png",
                 Title = "Salir",
                 PageName = "SalirPage"
             });

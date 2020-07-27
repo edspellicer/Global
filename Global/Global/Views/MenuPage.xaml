@@ -47,11 +47,14 @@
               Source="{Binding icon}"
               WidthRequest="50"
               HeightRequest="50"/>
+                        
             <Label 
               Grid.Column="1"
               VerticalOptions="Center"
               TextColor="{StaticResource MenuFontColor}"
-              Text="{Binding Title}"/>
+              Text="{Binding Title}"
+               FontAttributes="Bold"/>
+                        
                     </Grid>
                 </ViewCell>
             </DataTemplate>
