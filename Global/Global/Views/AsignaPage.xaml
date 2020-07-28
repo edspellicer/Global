@@ -5,9 +5,28 @@
              Title="Asignaciones"
              BackgroundColor="{StaticResource BackgroundColor}"
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
-    <Label 
-           Text="Asignaciones" 
-           HorizontalOptions="Center"
-           VerticalOptions="Center" />
     
+    <StackLayout>
+        <ListView x:Name="MyListViewpa">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label 
+                                Text="{Binding Folio}"
+                                TextColor="Gray"/>
+                            <Label 
+                                Text="{Binding NumPed}"
+                                TextColor="Gray"/>
+                            <Label 
+                                Text="{Binding Status}"
+                                TextColor="{StaticResource AccentColor}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+
 </ContentPage>
