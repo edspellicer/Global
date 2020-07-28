@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Global.Models
-{
+{//bhhhgh
     public class Lgperson
     {
         public string CodPer { get; set; }
